@@ -1,0 +1,45 @@
+=== PENDU ===
+
+Regle : DEVINER UN MOT AVEC UN NOMBRE D'ESSAIS LIMITE
+
+var chances = 10;
+
+var mots = [
+    "elephant", // 0
+    "mouton", // 1
+    ...
+]
+
+optional random
+-----------
+Proposition d'un mot du tableau aleatoirement
+mais pensez à supprimez le mot après sa selection
+
+Soumettre une lettre via un element "input" comprenant un label
+et le boutton de soumission (onclick).
+
+(if) Si on reçoit la lettre "a" est qu'elle est contenu dans le mot alors
+on affiche la lettre au bon emplacement.
+-----------------------------------------------
+ U   S  B
+|_| |_| |_| === SPAN (document.createElement * le nombre de lettre dans le mot) avec un border-bottom
+id0 id1 id2
+-----------------------------------------------
+
+"usb".length = 3
+['u', 's', 'b'] 
+        1
+
+SI on reçoit la lettre "x" est qu'elle n'est pas contenu dans le mot alors
+on retire une vie.
+-----------------------------------------------
+chances--;
+------------------------------------------------
+
+Si les chances sont egale à 0, la partie est perdu. (message à faire passer)
+
+<!-- optional -->
+usb contient 3 lettres donc 3 * 2 = 6 chances
+
+
+
